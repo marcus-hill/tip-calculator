@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" async></script>
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <p>Split<br>ter</p>
+    <div class="tip-calculator-container">
+      <form>
+        <div class="bill-section">
+          <label for="bill-amount-input" class="bill-amount-label">Bill</label>
+          <input type="number" class="input-box-tip bill" id="bill-amount-input" name="Bill">
+        </div>
+
+        <div class="tip-section">
+          <p class="select-tip-label">Select Tip %</p>
+          <div class="tip-grid">
+            <input type="radio" name="tip" id="tip-amount-5" class="input-tip-amount">
+            <label for="tip-amount-5" class="input-tip-label">5%</label>
+  
+            <input type="radio" name="tip" id="tip-amount-10" class="input-tip-amount">
+            <label for="tip-amount-10" class="input-tip-label">10%</label>
+  
+            <input type="radio" name="tip" id="tip-amount-15" class="input-tip-amount" checked>
+            <label for="tip-amount-15" class="input-tip-label">15%</label>
+  
+            <input type="radio" name="tip" id="tip-amount-25" class="input-tip-amount">
+            <label for="tip-amount-25" class="input-tip-label">25%</label>
+  
+            <input type="radio" name="tip" id="tip-amount-50" class="input-tip-amount">
+            <label for="tip-amount-50" class="input-tip-label">50%</label>
+  
+            <input type="number" name="tip" id="tip-amount-custom" class="input-tip-custom" placeholder="Custom">
+          </div>
+
+          <div class="number-people-section">
+            <label for="number-people-input" class="number-people-label">Number of People</label>
+            <input type="number" class="input-box-tip number-people" id="number-people-input" name="Number of people">
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </main>
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+
+</body>
+</html>
