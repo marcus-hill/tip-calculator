@@ -91,23 +91,39 @@ input[type=number] {
 
 /* Code: */
 
+.splitter-title {
+  padding-top: calc(50rem/16);
+  margin: auto;
+}
+
 main {
     background-color: #C5E4E7;
+    min-height: 100vh;
 }
 
 .tip-calculator-container {
     font-family: 'Space Mono', sans-serif;
     background-color: white;
-    padding: calc(30rem/16) calc(30rem/16);
+    padding: calc(30rem/16) 0;
     border-radius: 25px;
+    margin-top: calc(35rem/16);
 }
 
 .bill-section {
-    margin-bottom: calc(32rem/16);
+    margin: 0 calc(30rem/16) calc(32rem/16) calc(30rem/16);
 }
 
 .number-people-section {
-    margin-top: calc(32rem/16);
+    margin: calc(32rem/16) calc(30rem/16) 0 calc(30rem/16);
+}
+
+.number-people-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-section {
+  margin: 0 calc(30rem/16);
 }
 
 .bill-amount-label, .select-tip-label, .number-people-label {
@@ -134,11 +150,13 @@ main {
     font-size: calc(24rem/16);
     color: #00474B;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 .input-box-tip:hover, .input-box-tip:active, .input-box-tip:focus {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .tip-grid {
@@ -177,6 +195,10 @@ main {
     font-weight: 600;
 }
 
+.input-tip-label:hover {
+  cursor: pointer;
+}
+
 .input-tip-custom {
     border: none;
     border-radius: 5px;
@@ -189,8 +211,99 @@ main {
     color: #00474B;
 }
 
-.input-tip-custom:hover, .input-tip-custom:focus, .input-tip-custom:active {
+.input-box-tip:hover, .input-box-tip:focus, .input-box-tip:active, .input-tip-custom:hover,  .input-tip-custom:focus, .input-tip-custom:active{
     outline: 2px solid #26C2AE;
     text-align: right;
-    
+}
+
+.total-section {
+  margin: calc(32rem/16) calc(23rem/16);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 5);
+  background-color: #00474B;
+  padding: calc(37rem/16) calc(24rem/16) calc(24rem/16) calc(24rem/16);
+  border-radius: 15px;
+}
+
+.tip-amount-person-container {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.tip-amount-person {
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: center;
+  justify-self: end;
+}
+
+.tip-amount-total {
+  align-self: center;
+  justify-self: end;
+}
+
+.submit-button {
+  grid-area: 5 / 1 / 6 / 3;
+  margin-top: 2rem;
+  padding: calc(10rem/16) 0;
+  color: #00474B;
+  font-size: calc(20rem/16);
+  font-weight: 600;
+  background-color: #26C2AE;
+  border: none;
+  outline: none;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.tip-amount-title {
+  font-weight: 600;
+  color: white;
+}
+
+.tip-amount-text {
+  font-weight: 600;
+  color: #7F9D9F;
+  font-size: calc(13rem/16);
+}
+
+.tip-amount-total-text {
+  color: #26C2AE;
+  font-size: calc(32rem/16);
+  font-weight: 700;
+}
+
+.number-people-error {
+  text-align: right;
+  display: none;
+  color: #E17457;
+}
+
+@media (min-width: 40rem) {
+  .splitter-title {
+    padding-top: calc(160rem/16);
+  }
+  .tip-calculator-container {
+    max-width: calc(920rem/16);
+    margin-top: calc(87rem/16);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .tip-calculator-container form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-box-tip {
+    width: 95%;
+  }
+
+  .error-visible {
+    display: block;
+  }
+
+  .error-visible-border {
+    border: 2px solid #E17052;
+  }
 }
