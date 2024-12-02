@@ -20,28 +20,28 @@
         <div class="top">
           <div class="bill-section">
             <label for="bill-amount-input" class="bill-amount-label">Bill</label>
-            <input type="number" class="input-box-tip bill" id="bill-amount-input" name="Bill">
+            <input type="number" aria-label="Input Bill Amount" class="input-box-tip bill" id="bill-amount-input" name="Bill">
           </div>
   
           <div class="tip-section">
             <p class="select-tip-label">Select Tip %</p>
             <div class="tip-grid">
-              <input type="radio" name="tip" id="tip-amount-5" class="input-tip-amount" value="5">
+              <input type="radio" name="tip" id="tip-amount-5" class="input-tip-amount" value="5" aria-label="Tip Amount 5%">
               <label for="tip-amount-5" class="input-tip-label">5%</label>
     
-              <input type="radio" name="tip" id="tip-amount-10" class="input-tip-amount" value="10">
+              <input type="radio" name="tip" id="tip-amount-10" class="input-tip-amount" value="10" aria-label="Tip Amount 10%">
               <label for="tip-amount-10" class="input-tip-label">10%</label>
     
-              <input type="radio" name="tip" id="tip-amount-15" class="input-tip-amount" value="15" checked>
+              <input type="radio" name="tip" id="tip-amount-15" class="input-tip-amount" value="15" checked aria-label="Tip Amount 15%">
               <label for="tip-amount-15" class="input-tip-label">15%</label>
     
-              <input type="radio" name="tip" id="tip-amount-25" class="input-tip-amount" value="25">
+              <input type="radio" name="tip" id="tip-amount-25" class="input-tip-amount" value="25" aria-label="Tip Amount 25%">
               <label for="tip-amount-25" class="input-tip-label">25%</label>
     
-              <input type="radio" name="tip" id="tip-amount-50" class="input-tip-amount" value="50">
+              <input type="radio" name="tip" id="tip-amount-50" class="input-tip-amount" value="50" aria-label="Tip Amount 50%">
               <label for="tip-amount-50" class="input-tip-label">50%</label>
     
-              <input type="number" name="tipCustom" id="tip-amount-custom" class="input-tip-custom" placeholder="Custom">
+              <input type="number" name="tipCustom" id="tip-amount-custom" class="input-tip-custom" placeholder="Custom" aria-label="Enter Custom % Tip Amount">
             </div>
           </div>
   
@@ -51,7 +51,7 @@
               <label for="number-people-input" class="number-people-label number-people-error error-visible" id="number-people-error">Can't be zero</label>
             </div>
             
-            <input type="number" class="input-box-tip number-people error-visible-border" id="number-people-input" name="Number of people">
+            <input type="number" class="input-box-tip number-people error-visible-border" id="number-people-input" name="Number of people" aria-label="Enter number of people">
           </div>
   
         </div>
@@ -67,7 +67,7 @@
             <p class="tip-amount-text">/ person</p>
           </div>
           <p class="tip-amount-total tip-amount-total-text" id="tip-amount-total">32.79</p>
-          <input type="submit" value="RESET" id="reset-form" class="submit-button">
+          <input type="submit" value="RESET" id="reset-form" class="submit-button" aria-label="Reset Tip Calculator Inputs">
         </div>
       </form>
     </div>
