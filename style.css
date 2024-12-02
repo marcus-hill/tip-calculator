@@ -306,4 +306,21 @@ main {
   .error-visible-border {
     border: 2px solid #E17052;
   }
+
+  .total-section {
+    margin: 0 calc(23rem/16) 0 0;
+    min-width: 25rem;
+  }
+
+  .tip-amount-total-text {
+    font-size: 4rem;
+  }
+
+  .tip-amount-total-container, .tip-amount-person-container {
+    align-self: center;
+  }
+
+  .submit-button {
+    padding: calc(4rem/16) 0;
+  }
 }
