@@ -323,4 +323,8 @@ main {
   .submit-button {
     padding: calc(4rem/16) 0;
   }
+
+  .tip-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
