@@ -24,12 +24,12 @@ billAmountInput.addEventListener('input', function (evt) {
 
 numberOfPeople.addEventListener('input', function (evt) {
     if (numberOfPeople.value > 0) {
-        numberPeopleErrorMessage.classList.toggle("error-visible")
-        numberPeopleInput.classList.toggle("error-visible-border")
+        numberPeopleErrorMessage.classList.remove("error-visible")
+        numberPeopleInput.classList.remove("error-visible-border")
         displayTipAmounts();
     } else {
-        numberPeopleErrorMessage.classList.toggle("error-visible")
-        numberPeopleInput.classList.toggle("error-visible-border")
+        numberPeopleErrorMessage.classList.add("error-visible")
+        numberPeopleInput.classList.add("error-visible-border")
     }
 });
 
